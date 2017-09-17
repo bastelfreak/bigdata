@@ -199,6 +199,7 @@ class: center, middle, inverse
 
 .right-column[
 
+* Add here some characteristics of a big data setup
 ]
 
 ---
@@ -211,6 +212,13 @@ class: center, middle, inverse
 
 .right-column[
 
+* Multiple servers send log messages to a central location
+
+* Logstash receives the data and inserts it into postgres
+
+* Postgres inserts the data into a single logical table
+
+* Partitioning by a timestamp splits the data into child tables
 ]
 
 ---
@@ -223,7 +231,10 @@ class: center, middle, inverse
 
 .right-column[
 
+![Default-aligned image](bigdata-dataflow.svg)
+
 ]
+
 
   </textarea>
     <script src="remark-latest.min.js"></script>
