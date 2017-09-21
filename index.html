@@ -120,6 +120,9 @@
         text-align: center;
       }
       .right-column img {
+        width: 100%;
+      }
+      .right-column .something img {
         width: auto;
         height: 600px;
       }
@@ -154,7 +157,7 @@ class: center, middle, inverse
 
 * What?
 
-* How to build your own big data setup?
+* How?
 
 ---
 
@@ -200,19 +203,6 @@ class: center, middle, inverse
 
 .right-column[
 
-* Add here some characteristics of a big data setup
-]
-
----
-
-.left-column[
-
-## Setup
-
-]
-
-.right-column[
-
 * Multiple servers send log messages to a central location
 
 * Logstash receives the data and inserts it into postgres
@@ -226,16 +216,30 @@ class: center, middle, inverse
 
 .left-column[
 
-## Setup
+## How?
+### Architecture
+]
 
+.right-column[
+  .something[
+    ![Default-aligned image](bigdata-dataflow.svg)
+  ]
+]
+
+---
+
+.left-column[
+
+## How?
+### Architecture
+### Partitioning
 ]
 
 .right-column[
 
-![Default-aligned image](bigdata-dataflow.svg)
+![Default-aligned image](postgres-partitioning.svg)
 
 ]
-
 
   </textarea>
     <script src="remark-latest.min.js"></script>
